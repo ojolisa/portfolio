@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Calendar, MapPin, ExternalLink, Download, Eye, FileText } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, Download, FileText } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const Experience = () => {
@@ -117,7 +117,7 @@ const Experience = () => {
 
                   {/* Technologies */}
                   {exp.technologies && exp.technologies.length > 0 && (
-                    <div>
+                    <div className="mb-6">
                       <h5 className="font-semibold text-gray-900 mb-3">
                         Technologies Used:
                       </h5>
@@ -130,6 +130,39 @@ const Experience = () => {
                             {tech}
                           </span>
                         ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Company Links */}
+                  {exp.links && Object.keys(exp.links).length > 0 && (
+                    <div>
+                      <h5 className="font-semibold text-gray-900 mb-3">
+                        Company Links:
+                      </h5>
+                      <div className="flex flex-wrap gap-3">
+                        {exp.links.website && (
+                          <a
+                            href={exp.links.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                          >
+                            <ExternalLink size={16} />
+                            Website
+                          </a>
+                        )}
+                        {exp.links.linkedin && (
+                          <a
+                            href={exp.links.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 border border-blue-300 rounded-lg hover:bg-blue-200 transition-colors duration-200"
+                          >
+                            <ExternalLink size={16} />
+                            LinkedIn
+                          </a>
+                        )}
                       </div>
                     </div>
                   )}
@@ -218,18 +251,6 @@ const Experience = () => {
                   >
                     <Download size={18} />
                     Download Resume
-                  </motion.a>
-                  
-                  <motion.a
-                    href={portfolioData.social.resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="btn btn-secondary flex items-center gap-2"
-                  >
-                    <Eye size={18} />
-                    Preview Online
                   </motion.a>
                 </div>
 

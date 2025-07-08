@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Code, Database, Wrench, Languages } from 'lucide-react';
+import { Code, Database, Wrench, Languages, Brain, Server } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const Skills = () => {
@@ -26,6 +26,20 @@ const Skills = () => {
       icon: Database,
       color: 'green',
       skills: portfolioData.skills.backend,
+    },
+    {
+      id: 'ai_ml',
+      name: 'AI/ML',
+      icon: Brain,
+      color: 'red',
+      skills: portfolioData.skills.ai_ml,
+    },
+    {
+      id: 'databases',
+      name: 'Databases',
+      icon: Server,
+      color: 'teal',
+      skills: portfolioData.skills.databases,
     },
     {
       id: 'tools',
@@ -88,6 +102,18 @@ const Skills = () => {
         text: isActive ? 'text-white' : 'text-green-600',
         border: 'border-green-200',
         hover: 'hover:bg-green-50',
+      },
+      red: {
+        bg: isActive ? 'bg-red-600' : 'bg-red-100',
+        text: isActive ? 'text-white' : 'text-red-600',
+        border: 'border-red-200',
+        hover: 'hover:bg-red-50',
+      },
+      teal: {
+        bg: isActive ? 'bg-teal-600' : 'bg-teal-100',
+        text: isActive ? 'text-white' : 'text-teal-600',
+        border: 'border-teal-200',
+        hover: 'hover:bg-teal-50',
       },
       purple: {
         bg: isActive ? 'bg-purple-600' : 'bg-purple-100',

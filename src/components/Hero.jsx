@@ -34,7 +34,6 @@ const Hero = () => {
     { icon: Github, url: social.github, label: 'GitHub' },
     { icon: Linkedin, url: social.linkedin, label: 'LinkedIn' },
     { icon: Code, url: social.leetcode, label: 'LeetCode' },
-    { icon: Mail, url: `mailto:${personal.email}`, label: 'Email' },
   ];
 
   return (

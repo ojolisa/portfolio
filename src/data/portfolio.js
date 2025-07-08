@@ -2,14 +2,14 @@ export const portfolioData = {
   // Personal Information
   personal: {
     name: "Ojasv Singhal",
-    title: "Full Stack & ML Developer",
+    title: "Software Engineer",
     subtitle: "Bridging AI and web to build impactful solutions",
     typingTitles: [
+      "Software Engineer",
       "Full Stack Developer",
-      "ML Engineer", 
-      "AI Enthusiast",
+      "AI/ML Engineer", 
+      "Data Scientist",
       "Problem Solver",
-      "Tech Innovator"
     ],
     email: "ojasvsinghal11223344@gmail.com",
     phone: "+91 9873744099",
@@ -21,7 +21,7 @@ export const portfolioData = {
   social: {
     github: "https://github.com/ojolisa",
     linkedin: "https://www.linkedin.com/in/ojasv-singhal-35669625b/",
-    leetcode: "https://leetcode.com/u/ojasv_singhal/",
+    leetcode: "https://leetcode.com/u/ojasvsinghal11223344/",
     twitter: "",
     portfolio: "",
     resume: "/resume.pdf"
@@ -33,7 +33,7 @@ export const portfolioData = {
     backend: ["Node.js", "Flask", "Express.js"],
     tools: ["Git", "Jupyter Notebook", "MATLAB", "Unreal Engine", "Tableau", "DBMS", "REST API", "Docker", "VS Code"],
     languages: ["Python", "Java", "C", "JavaScript", "Bash", "SQL", "TypeScript"],
-    ai_ml: ["TensorFlow", "PyTorch", "Langchain", "OpenAI API", "Scikit-learn", "Pandas", "NumPy"],
+    ai_ml: ["Machine Learning", "Deep Learning", "Neural Networks", "Natural Language Processing", "Computer Vision", "MLOps", "LLMOps", "TensorFlow", "PyTorch", "Langchain", "OpenAI API", "Scikit-learn", "Pandas", "NumPy", "Keras"],
     databases: ["SQLite", "MySQL", "PostgreSQL", "MongoDB"]
   },
 
@@ -43,12 +43,12 @@ export const portfolioData = {
       id: 1,
       institution: "Indian Institute of Technology, Madras",
       degree: "Bachelor of Science in Data Science and Applications",
-      duration: "2022 - 2026 (Credit Completion in Aug 2025)",
+      duration: "2022 - 2026",
       location: "India",
       gpa: "9.22",
       description: "Minor in Finance",
       achievements: [
-        "Maintained 9.22 GPA throughout the program",
+        "Credit Completion in Aug 2025 (One of the fastest in the program)",
         "Specialized in Data Science with Finance Minor",
         "Completed advanced coursework in Machine Learning and Statistics"
       ]
@@ -61,9 +61,8 @@ export const portfolioData = {
       location: "Delhi, India",
       gpa: "8.875",
       achievements: [
-        "Maintained 8.875 GPA in AI/ML program",
         "Active participant in technical projects and competitions",
-        "Specialized in Machine Learning algorithms and AI applications"
+        "Specialized in Machine Learning algorithms and AI applications",
       ]
     },
     {
@@ -74,8 +73,6 @@ export const portfolioData = {
       location: "Delhi, India",
       description: "12th: 90.8%, 10th: 92.8%",
       achievements: [
-        "Scored 90.8% in Class 12th",
-        "Scored 92.8% in Class 10th",
         "Strong foundation in Mathematics and Science"
       ]
     }
@@ -96,7 +93,11 @@ export const portfolioData = {
         "Developed AI agents for automated workflows",
         "Implemented vector database solutions for semantic search"
       ],
-      technologies: ["Langchain", "Python", "APIs", "Vector DBs", "RAG", "OpenAI API"]
+      technologies: ["Langchain", "Python", "APIs", "Vector DBs", "RAG", "OpenAI API"],
+      links: {
+        website: "https://www.buildfastwithai.com/",
+        linkedin: "https://www.linkedin.com/company/build-fast-with-ai"
+      }
     },
     {
       id: 2,
@@ -107,11 +108,14 @@ export const portfolioData = {
       description: "Co-founded a startup focused on ML solutions. Managed the team and contributed to ML engineering tasks.",
       achievements: [
         "Led development and team management for ML products",
-        "Deployed AI-powered products serving 1000+ users",
         "Built scalable ML infrastructure using Flask and Python",
         "Implemented real-time prediction systems"
       ],
-      technologies: ["Python", "Flask", "Machine Learning", "Docker", "AWS", "PostgreSQL"]
+      technologies: ["Python", "Flask", "Machine Learning", "Docker", "AWS", "PostgreSQL"],
+      links: {
+        website: "",
+        linkedin: "https://www.linkedin.com/company/xander-corp01/"
+      }
     }
   ],
 
@@ -125,7 +129,7 @@ export const portfolioData = {
       technologies: ["Vue.js", "Flask", "Gemini API", "Python", "SQLite"],
       features: ["Generative AI for coding help", "Python learning modules", "Interactive UI", "Progress tracking"],
       liveUrl: "",
-      githubUrl: "https://github.com/ojolisa/genai-lms",
+      githubUrl: "https://github.com/ojolisa/GenAI_LMS",
       category: "Full Stack"
     },
     {
@@ -135,7 +139,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["Python", "Langchain", "PyTest", "ChromaDB", "OpenAI API"],
       features: ["PDF ingestion", "Searchable knowledge base", "Cited AI responses", "Multi-document support"],
-      githubUrl: "https://github.com/ojolisa/rag-document-system",
+      githubUrl: "https://github.com/ojolisa/RAG-Document-System",
       category: "AI/ML"
     },
     {
@@ -145,7 +149,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["Python", "Shap-E", "Jupyter", "OpenAI API"],
       features: ["Image to 3D conversion", "Text to 3D generation", "Export to STL/OBJ", "Interactive preview"],
-      githubUrl: "https://github.com/ojolisa/text-to-3d",
+      githubUrl: "https://github.com/ojolisa/image-text-to-3d-model",
       category: "AI/ML"
     },
     {
@@ -155,7 +159,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["PyTorch", "Python", "Pascal VOC", "YOLO", "OpenCV"],
       features: ["Training pipeline", "Model evaluation", "YOLO-based architecture", "Real-time detection"],
-      githubUrl: "https://github.com/ojolisa/custom-object-detection",
+      githubUrl: "https://github.com/ojolisa/Custom-object-detection",
       category: "AI/ML"
     },
     {
@@ -165,7 +169,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["JavaScript", "Ethereum", "Smart Contracts", "Web3.js", "Solidity"],
       features: ["Secure voting", "Decentralized ledger", "Transparent results", "Voter verification"],
-      githubUrl: "https://github.com/ojolisa/blockchain-voting",
+      githubUrl: "https://github.com/ojolisa/Decentralized-Voting-on-the-Ethereum-Blockchain",
       category: "Blockchain"
     },
     {
@@ -175,7 +179,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["Vue.js", "Flask", "SQLite", "Python", "HTML/CSS"],
       features: ["Product browsing", "Cart & checkout", "Admin management", "Order tracking"],
-      githubUrl: "https://github.com/ojolisa/grocery-store-app",
+      githubUrl: "https://github.com/ojolisa/Project_MAD1",
       category: "Full Stack"
     },
     {
@@ -185,7 +189,7 @@ export const portfolioData = {
       image: "/api/placeholder/400/250",
       technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite", "JavaScript"],
       features: ["Responsive design", "Smooth animations", "Interactive UI", "Modern styling"],
-      liveUrl: "https://ojasv-portfolio.vercel.app",
+      liveUrl: "https://ojasvportfolio.vercel.app",
       githubUrl: "https://github.com/ojolisa/portfolio",
       category: "Frontend"
     }
@@ -193,34 +197,10 @@ export const portfolioData = {
 
   // Certifications
   certifications: [
-    {
-      id: 1,
-      name: "Machine Learning Specialization",
-      issuer: "Stanford University (Coursera)",
-      date: "2024",
-      description: "Comprehensive course covering supervised and unsupervised learning, neural networks, and best practices.",
-      credentialUrl: ""
-    },
-    {
-      id: 2,
-      name: "Full Stack Web Development",
-      issuer: "FreeCodeCamp",
-      date: "2023",
-      description: "Complete certification covering frontend and backend development technologies.",
-      credentialUrl: ""
-    }
   ],
 
   // Testimonials
   testimonials: [
-    {
-      id: 1,
-      name: "Rahul Sharma",
-      position: "Senior Developer at BuildFastWithAI",
-      company: "BuildFastWithAI",
-      content: "Ojasv demonstrated exceptional skills in AI development during his internship. His work on RAG pipelines was outstanding.",
-      image: "/api/placeholder/100/100"
-    }
   ],
 
   // Contact Form Settings

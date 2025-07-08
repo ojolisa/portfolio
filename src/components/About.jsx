@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { User, Award, Coffee, Code, Download, Eye, FileText, Star, Calendar, MapPin } from 'lucide-react';
+import { User, Award, Coffee, Code, Download, FileText, Star, Calendar, MapPin } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
-import ResumeModal from './ResumeModal';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -11,32 +10,7 @@ const About = () => {
     threshold: 0.1,
   });
 
-  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
-
   const { personal, experience, certifications } = portfolioData;
-
-  const stats = [
-    {
-      icon: Code,
-      label: 'Projects Completed',
-      value: portfolioData.projects.length,
-    },
-    {
-      icon: Coffee,
-      label: 'Years Experience',
-      value: new Date().getFullYear() - 2022, // Adjust based on your start year
-    },
-    {
-      icon: Award,
-      label: 'Certifications',
-      value: certifications.length,
-    },
-    {
-      icon: User,
-      label: 'Happy Clients',
-      value: portfolioData.testimonials.length,
-    },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -77,9 +51,9 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex justify-center">
             {/* About Content */}
-            <motion.div variants={itemVariants} className="space-y-6">
+            <motion.div variants={itemVariants} className="space-y-6 max-w-4xl">
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-gray-900">
                   Hello! I'm {personal.name.split(' ')[0]}
@@ -124,28 +98,6 @@ const About = () => {
                   Let's Work Together
                 </a>
               </div>
-            </motion.div>
-
-            {/* Stats Grid */}
-            <motion.div variants={itemVariants} className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05 }}
-                  className="card text-center group hover:border-blue-200"
-                >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                    <stat.icon size={24} />
-                  </div>
-                  <div className="text-3xl font-bold text-gray-900 mb-2">
-                    {stat.value}+
-                  </div>
-                  <div className="text-gray-600 font-medium">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
             </motion.div>
           </div>
 
@@ -231,16 +183,6 @@ const About = () => {
                             <Download size={18} />
                             Download PDF
                           </motion.a>
-                          
-                          <motion.button
-                            onClick={() => setIsResumeModalOpen(true)}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="btn btn-secondary flex items-center gap-2 min-w-[140px] justify-center"
-                          >
-                            <Eye size={18} />
-                            Preview
-                          </motion.button>
                         </div>
 
                         {/* File Info */}
@@ -356,12 +298,6 @@ const About = () => {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Resume Modal */}
-      <ResumeModal 
-        isOpen={isResumeModalOpen} 
-        onClose={() => setIsResumeModalOpen(false)} 
-      />
     </section>
   );
 };

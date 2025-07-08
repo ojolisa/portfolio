@@ -128,9 +128,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
               <p className="flex items-center gap-2">
-                © {new Date().getFullYear()} {personal.name}. Made with 
-                <Heart size={16} className="text-red-500" /> 
-                using React & Vite
+                © {new Date().getFullYear()} {personal.name}. Made using React & Vite
               </p>
             </div>
             

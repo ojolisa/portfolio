@@ -7,7 +7,7 @@ export const portfolioData = {
     typingTitles: [
       "Software Engineer",
       "Full Stack Developer",
-      "AI/ML Engineer", 
+      "AI/ML Engineer",
       "Data Scientist",
       "Problem Solver",
     ],
@@ -40,6 +40,18 @@ export const portfolioData = {
   // Education
   education: [
     {
+      id: 2,
+      institution: "Maharaja Agrasen Institute of Technology",
+      degree: "BTech in Artificial Intelligence and Machine Learning",
+      duration: "2022 - 2026",
+      location: "Delhi, India",
+      gpa: "8.922",
+      achievements: [
+        "Active participant in technical projects and competitions",
+        "Specialized in Machine Learning algorithms and AI applications",
+      ]
+    },
+    {
       id: 1,
       institution: "Indian Institute of Technology, Madras",
       degree: "Bachelor of Science in Data Science and Applications",
@@ -51,18 +63,6 @@ export const portfolioData = {
         "Credit Completion in Aug 2025 (One of the fastest in the program)",
         "Specialized in Data Science with Finance Minor",
         "Completed advanced coursework in Machine Learning and Statistics"
-      ]
-    },
-    {
-      id: 2,
-      institution: "Maharaja Agrasen Institute of Technology",
-      degree: "BTech in Artificial Intelligence and Machine Learning",
-      duration: "2022 - 2026",
-      location: "Delhi, India",
-      gpa: "8.875",
-      achievements: [
-        "Active participant in technical projects and competitions",
-        "Specialized in Machine Learning algorithms and AI applications",
       ]
     },
     {

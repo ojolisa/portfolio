@@ -192,6 +192,16 @@ export const portfolioData = {
       liveUrl: "https://ojasvportfolio.vercel.app",
       githubUrl: "https://github.com/ojolisa/portfolio",
       category: "Frontend"
+    },
+    {
+      id: 8,
+      title: "MERN-Stack E-Commerce",
+      description: "Full-stack e-commerce application built with MongoDB, Express.js, React, and Node.js.",
+      image: "/api/placeholder/400/250",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"],
+      features: ["User authentication", "Product management", "Shopping cart", "Order processing"],
+      githubUrl: "https://github.com/ojolisa/MERN-E-com-web-app",
+      category: "Full Stack"
     }
   ],
 

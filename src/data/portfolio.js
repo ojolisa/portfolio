@@ -211,7 +211,17 @@ export const portfolioData = {
       "technologies": ["Python", "Node.js", "Express.js", "JavaScript", "HTML", "CSS", "LowDB"],
       "features": ["Cross-platform agent (Windows/macOS/Linux)", "Disk encryption monitoring", "OS update tracking", "Antivirus status checking", "Web dashboard", "RESTful API", "Secure TLS communication", "Real-time compliance reporting"],
       "githubUrl": "https://github.com/ojolisa/Compliance-monitor",
-      "category": "Security & Monitoring"
+      "category": "Operating Systems and Security"
+    },
+    {
+      "id": 10,
+      "title": "Smart To-Do Manager",
+      "description": "A modern full-stack task management application with AI-powered summaries, built with React frontend and Node.js backend for efficient productivity tracking.",
+      "image": "/api/placeholder/400/250",
+      "technologies": ["React", "Node.js", "Express.js", "MongoDB", "Mongoose", "JavaScript", "HTML", "CSS", "Vite", "Google Gemini AI"],
+      "features": ["Task creation and management", "AI-powered task summaries", "Real-time search and filtering", "Markdown support for descriptions", "RESTful API", "CRUD operations", "Cross-platform web interface", "Responsive design"],
+      "githubUrl": "https://github.com/ojolisa/to-do",
+      "category": "Full Stack"
     }
   ],
 

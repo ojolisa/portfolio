@@ -202,6 +202,16 @@ export const portfolioData = {
       features: ["User authentication", "Product management", "Shopping cart", "Order processing"],
       githubUrl: "https://github.com/ojolisa/MERN-E-com-web-app",
       category: "Full Stack"
+    },
+    {
+      "id": 9,
+      "title": "Compliance Monitor",
+      "description": "A comprehensive cross-platform system monitoring solution that tracks security compliance across Windows, macOS, and Linux endpoints with centralized web-based reporting.",
+      "image": "/api/placeholder/400/250",
+      "technologies": ["Python", "Node.js", "Express.js", "JavaScript", "HTML", "CSS", "LowDB"],
+      "features": ["Cross-platform agent (Windows/macOS/Linux)", "Disk encryption monitoring", "OS update tracking", "Antivirus status checking", "Web dashboard", "RESTful API", "Secure TLS communication", "Real-time compliance reporting"],
+      "githubUrl": "https://github.com/ojolisa/Compliance-monitor",
+      "category": "Security & Monitoring"
     }
   ],
 

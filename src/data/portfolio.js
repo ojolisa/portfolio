@@ -82,6 +82,17 @@ export const portfolioData = {
   experience: [
     {
       id: 1,
+      company: "SalesCode.ai",
+      position: "Generative AI Engineer",
+      duration: "Sep 2025 - Present",
+      location: "Onsite",
+      links: {
+        website: "https://salescode.ai/",
+        linkedin: "https://www.linkedin.com/company/salescodeai"
+      }
+    },
+    {
+      id: 2,
       company: "BuildFastWithAI",
       position: "AI Intern",
       duration: "May 2024 - Aug 2024",
@@ -100,7 +111,7 @@ export const portfolioData = {
       }
     },
     {
-      id: 2,
+      id: 3,
       company: "Xander.co",
       position: "ML Engineer and Co-founder",
       duration: "Aug 2024 - July 2025",

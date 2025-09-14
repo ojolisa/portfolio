@@ -57,7 +57,7 @@ export const portfolioData = {
       degree: "Bachelor of Science in Data Science and Applications",
       duration: "2022 - 2026",
       location: "India",
-      gpa: "9.22",
+      gpa: "9.26",
       description: "Minor in Finance",
       achievements: [
         "Credit Completion in Aug 2025 (One of the fastest in the program)",
